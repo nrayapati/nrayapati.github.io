@@ -1,0 +1,163 @@
+locale                   : "en"
+title                    : "Thoughts Live!"
+title_separator          : "-"
+name                     : "Naresh Rayapati"
+description              : "Yet Another Developer."
+url                      : # "https://nrayapati.github.io"
+baseurl                  : # "/blog"
+repository               : # "nrayapati/blog"
+# breadcrumbs              : false
+words_per_minute         : 100
+comments:
+  provider               : "disqus"
+  disqus:
+    shortname            : "nrayapati"
+atom_feed:
+  path                   : #feed.xml
+
+# SEO Related
+google_site_verification : "r1VzSEjJCh2Kj4K37a4_c6N_dCRUGaBWONV3mYxaJac"
+
+# Social Sharing
+twitter:
+  username               : 'nrayapati'
+
+# Analytics
+analytics:
+  provider               : "google-universal"
+  google:
+    tracking_id          : "UA-86684907-1"
+
+# Site Author
+author:
+  name             : "Naresh Rayapati"
+  avatar           : "Naresh.jpg"
+  bio              : "Yet Another Developer."
+  location         : "Kansas City, USA."
+  github           : "nrayapati"
+  linkedin         : "naresh-rayapati-1865561b"
+  twitter          : "nrayapati"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 9
+paginate_path: /page:num/
+timezone: America/Chicago
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

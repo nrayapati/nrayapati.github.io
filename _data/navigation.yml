@@ -1,0 +1,12 @@
+main:
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Archives"
+    url: /year-archive/
+
+  - title: "About"
+    url: /about/
+
+  - title: "Terms & Privacy Policy"
+    url: /terms/
