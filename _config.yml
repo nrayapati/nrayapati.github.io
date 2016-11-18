@@ -5,7 +5,7 @@ name                     : "Naresh Rayapati"
 description              : "Yet Another Developer."
 url                      : "https://nrayapati.github.io"
 baseurl                  : # "/blog"
-repository               : # "nrayapati/blog"
+repository               : # "nrayapati.github.io"
 # breadcrumbs              : false
 words_per_minute         : 100
 comments:
@@ -79,6 +79,13 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+# Asciidoc Processing
+asciidoc: {}
+asciidoctor:
+  attributes:
+    idprefix: _
+    source-highlighter: coderay
+
 # Markdown Processing
 kramdown:
   input: GFM
@@ -88,7 +95,8 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  enable_coderay: true
+  syntax_highlighter: coderay
 
 # Sass/SCSS
 sass:
@@ -129,6 +137,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-asciidoc
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -137,6 +146,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-asciidoc
 
 # Archives
 category_archive:

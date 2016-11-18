@@ -1,0 +1,13 @@
+---
+title: "Welcome...!"
+excerpt: "Welcome...!"
+categories:
+  - welcome
+tags:
+  - asciidoc
+  - jekyll
+---
+
+= Welcome to ThoughtsLive!
+
+Welcome... this is my first blog post.
